@@ -37,7 +37,7 @@ spec:
           {{- with .Values.securityContext }}
           env:
             - name: ENV_NAME
-              value: {{ .Values.envName }}
+              value: "dd"
           securityContext:
             {{- toYaml . | nindent 12 }}
           {{- end }}
